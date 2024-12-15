@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\JobController;
+use App\Http\Controllers\ReqisterUserController;
+use App\Http\Controllers\SessionUserController;
 use App\Livewire\Counter;
 use App\Livewire\CreatePost;
 use App\Models\Job;
@@ -15,7 +17,10 @@ Route::get('/contact', function () {
 });
 
 Route::resource('jobs', JobController::class);
-
+Route::get ('/reqister' , [ReqisterUserController::class , 'create']);
+Route::post ('/reqister' , [ReqisterUserController::class , 'store']);
+Route::get ('/login' , [SessionUserController::class , 'create']);
+Route::post ('/login' , [SessionUserController::class , 'store']);
 //Route::get('/', function () {
 //    return view('home');
 //});
