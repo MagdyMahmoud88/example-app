@@ -25,10 +25,10 @@
 
                 <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
                     <x-form-field>
-                        <x-form-label for="Email">Email</x-form-label>
+                        <x-form-label for="email">Email</x-form-label>
                         <div class="mt-2">
-                            <x-form-input type="email" name="Email" id="Email"  required />
-                            <x-form-error name="Email"/>
+                            <x-form-input type="email" name="email" id="email"  required />
+                            <x-form-error name="email"/>
                         </div>
                     </x-form-field>
 
@@ -42,7 +42,7 @@
                     <x-form-field>
                         <x-form-label for="password_confirmation">Confirm Password</x-form-label>
                         <div class="mt-2">
-                            <x-form-input type="password_confirmation" name="password_confirmation" id="password_confirmation"  required />
+                            <x-form-input type="password" name="password_confirmation" id="password_confirmation"  required />
                             <x-form-error name="password_confirmation"/>
                         </div>
                     </x-form-field>

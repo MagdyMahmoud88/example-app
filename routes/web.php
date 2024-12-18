@@ -21,6 +21,7 @@ Route::get ('/reqister' , [ReqisterUserController::class , 'create']);
 Route::post ('/reqister' , [ReqisterUserController::class , 'store']);
 Route::get ('/login' , [SessionUserController::class , 'create']);
 Route::post ('/login' , [SessionUserController::class , 'store']);
+Route::post ('/logout' , [SessionUserController::class , 'destory']);
 //Route::get('/', function () {
 //    return view('home');
 //});
